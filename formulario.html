@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ConSalud</title>
+    <link href="formulario.css" rel="stylesheet" type="text/css">
+    <script src="formulario.js"></script>
+
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <a href=""><img src="salud1.png"/></a> 
+                </td>
+                <td>
+                    <h1 id="title"><i><b>&nbsp;&nbsp;&nbsp;&nbsp;ConSalud</b></i></h1>
+                </td>
+                <td>
+                    <a href=""><img src="salud.png"/></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="header">
+        <ul class="menu">
+        <li><a href="conSalud.html">Inicio</a></li>
+
+          <li><a href="">Noticias</a>
+            <ul>
+                <li><a href="#">Medicamentos nuevos</a></li>
+                <li><a href="#">Preguntas y respuestas</a></li>
+            </ul>
+          </li>
+            <li><a href="">Acerca de</a>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </li>
+        <li>
+            <a href="registro.html">Registro</a>
+                   
+        </li>
+    </ul>
+</div>
+        <div id="form">
+        <form class="form" action="" name="formulario" method="" id="form_user">
+            <ol>
+            
+                <p>Seleccione: </p> <br>      
+                    <label for="sexo">Mujer</label>
+                    <input type="radio" value="0" name="sexo" id="mujer"/>
+                
+                    <label for="sexo">Hombre</label>
+                    <input type="radio" value="1" name="sexo" id="hombre"/><br>
+        
+                 <ul>  
+                    <br><label for="user"><b>Nombre</b></label><br>
+                    <br><input type="text" name="nombre" id="nombre" value="" maxlength="20" onkeypress="return limita" placeholder="ej: Pablo"><br>
+            
+                    <br><label for="apellidos"><b>Apellidos</b></label><br>
+                    <br><input type="text" name="apellidos" id="apellidos" value="" maxlength="30" onkeypress="return limita" placeholder="ej: Ruiz Carballo"><br>
+            
+                    <br><label for="email"><b>Correo Electrónico</b></label><br>
+                    <br><input type="email" name="correo" id="mail" pattern="[A-Za-z0-9]" value="" maxlength="40" onkeypress="return limita" placeholder="Introduzca su email"><br>
+        
+                    <br><label for="movil"><b>Móvil</b></label><br>
+                    <br><input type="number" name="movil" id="movil" value=""  max="" onkeypress="return limitaMovil"><br>
+
+                    <br><label for="user"><b>Contraseña</b></label><br>
+                    <br><input type="password" id="pass" name="clave" pattern="[A-Za-z0-9]{8,16}" onkeypress="return limita"><br>
+                                
+                    <br><button type="button" onclick="mostrarMensaje();">Registro</button>
+                 </ul>
+            </ol>  
+       </form>
+    </div>
+  
+    </body>
+</html>
